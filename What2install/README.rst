@@ -139,13 +139,6 @@ From a **new** terminal window, you can verify that the simple command below exe
 
 ``echo 'test' | cloudy.exe``
 
-The CHIANTI Database
-====================
-
-Download the Chianti atomic data from there: http://www.chiantidatabase.org/download/CHIANTI_8.0.6_data.tar.gz
-
-We will see how to use it in the school
-
 Test your installation
 ======================
 
