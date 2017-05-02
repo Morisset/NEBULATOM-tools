@@ -11,12 +11,15 @@ and download the following.
 
 From **STARLIGHT version 04 - Public release**:  
 (1) An executable suitable to your OS  
+(2) and (3) of this section are not needed (they are already in the
+NEBULATOM-tools distribution)  
 
 From **Base Files**, download:  
 - Base.bc03.Padova1994.chab.tar.bz2  
 - Base.bc03.Padova1994.salp.tar.bz2  
 - Base.bc03.Padova2000.chab.tar.bz2  
 - Base.bc03.Padova2000.salp.tar.bz2  
+
 
 ## Test STARLIGHT
 
