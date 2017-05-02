@@ -67,24 +67,14 @@ distribution is. For instance,
     /home/cid/STARLIGHTv04/                          [out_dir]
 
     [new]
-    /home/natalia/Downloads/STARLIGHTv04/BasesDir/   [base_dir]
-    /home/natalia/Downloads/STARLIGHTv04/            [obs_dir]
-    /home/natalia/Downloads/STARLIGHTv04/            [mask_dir]
-    /home/natalia/Downloads/STARLIGHTv04/            [out_dir]
-
-Be careful, the total path cannot be too large (i.e. STARLIGHT will
-complain if your directories are like
-`/home/natalia/projects/schools/2017/nebulatom3/hands_on/natalia/starlight/STARLIGHTv04/`). Also
-please avoid spaces in directory names.
+    ./BasesDir/                                      [base_dir]
+    ./                                               [obs_dir]
+    ./                                               [mask_dir]
+    ./                                               [out_dir]
 
 Save your `grid_example1.in` and try to run STARLIGHT:
 
     ./Starlight_v04_Mac.exe < grid_example1.in
-
-If STARLIGHT complains it has not found a file, the most likely culprit
-is your directory path: it may be too large. Try moving your files so
-that your path is smaller (or symlink to it in a smaller path), edit the
-`grid_example1.in` to reflect your changes, and please try again.
 
 After it has finished, inspect the creation date and the contents of the
 following files:
