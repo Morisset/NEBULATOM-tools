@@ -140,9 +140,11 @@ Test your installation:
     [write this into ipython]:
     %paste
 
+If you see four sets of numbers (e.g. `0.9.7 1.3.2 2.0.0 1.12.1`),
+python has succesfully imported and shown the versions of the libraries above.
 If there are no warnings or complaints, you are good to go.
 
-Go back to python 3:
+Leave ipython (`CTRL+D`). Go back to python 3:
 
     source deactivate python2.7
 
