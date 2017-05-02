@@ -10,9 +10,9 @@ Please go to [http://www.starlight.ufsc.br/node/3](http://www.starlight.ufsc.br/
 and download the following.
 
 From **STARLIGHT version 04 - Public release**:  
-(1) An executable suitable to your OS  
+(1) An executable suitable to your OS.   
 (2) and (3) of this section are not needed (they are already in the
-NEBULATOM-tools distribution)  
+NEBULATOM-tools distribution).  
 
 From **Base Files**, download:  
 - Base.bc03.Padova1994.chab.tar.bz2  
@@ -37,13 +37,12 @@ directory:
 
     cp NEBULATOM-tools/Starlight_data/* ~/Downloads/starlight/
 
-
 From a terminal, go to the directory where you have downloaded the files
 above, e.g.
 
     cd ~/Downloads/starlight/
 
-Untar the Starlight distribution (this will create a directory named STARLIGHTv04/):
+Untar the STARLIGHT distribution (this will create a directory named STARLIGHTv04/):
 
     tar xvfj StarlightChains_v04.Distrib.tar.bz2
     
@@ -53,12 +52,12 @@ STARLIGHTv04/ directory:
     chmod 755 Starlight_v04_[my_version].exe
     mv Starlight_v04_[my_version].exe STARLIGHTv04/
 
-Go to the Starlight ditribution directory and change a grid file:
+Go to the STARLIGHT ditribution directory and change this grid file:
 
     cd STARLIGHTv04/
     [open grid_example1.in with your favourite text editor]
 
-Edit lines 2--5 (copied below) to the directory where your Starlight
+Edit lines 2--5 (copied below) to the directory where your STARLIGHT
 distribution is. For instance, 
 
     [old]
@@ -74,11 +73,18 @@ distribution is. For instance,
     /home/natalia/Downloads/STARLIGHTv04/            [out_dir]
 
 Be careful, the total path cannot be too large (i.e. STARLIGHT will
-complain if your directories are like `/home/natalia/projects/schools/2017/nebulatom3/hands_on/natalia/starlight/STARLIGHTv04/`).
+complain if your directories are like
+`/home/natalia/projects/schools/2017/nebulatom3/hands_on/natalia/starlight/STARLIGHTv04/`). Also
+please avoid spaces in directory names.
 
 Save your `grid_example1.in` and try to run STARLIGHT:
 
     ./Starlight_v04_Mac.exe < grid_example1.in
+
+If STARLIGHT complains it has not found a file, the most likely culprit
+is your directory path: it may be too large. Try moving your files so
+that your path is smaller (or symlink to it in a smaller path), edit the
+`grid_example1.in` to reflect your changes, and please try again.
 
 After it has finished, inspect the creation date and the contents of the
 following files:
