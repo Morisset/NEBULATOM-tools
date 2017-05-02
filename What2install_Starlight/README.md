@@ -125,18 +125,20 @@ Install atpy and pystarlight for python 2.7:
     pip install atpy
     pip install https://bitbucket.org/astro_ufsc/pystarlight/get/27600142ec48.zip
     
-From a new terminal window, test:
+Test your installation:
 
     ipython
+    
+    [copy the commands below]:
     import atpy
     import astropy
     import matplotlib
     import numpy
     import pystarlight
-    atpy.__version__
-    astropy.__version__
-    matplotlib.__version__
-    numpy.__version__
+    print atpy.__version__, astropy.__version__, matplotlib.__version__, numpy.__version__
+    
+    [write this into ipython]:
+    %paste
 
 If there are no warnings or complaints, you are good to go.
 
