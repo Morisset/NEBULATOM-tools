@@ -10,9 +10,9 @@ Please go to [http://www.starlight.ufsc.br/node/3](http://www.starlight.ufsc.br/
 and download the following.
 
 From **STARLIGHT version 04 - Public release**:  
-(1) An executable suitable to your OS  
-(2) The distribution file  (This one is included in the NEBULATOM-tools package)
-(3) The User Guide  (This one is included in the NEBULATOM-tools package)
+(1) An executable suitable to your OS.   
+(2) and (3) of this section are not needed (they are already in the
+NEBULATOM-tools distribution).  
 
 From **Base Files**, download:  
 - Base.bc03.Padova1994.chab.tar.bz2  
@@ -20,30 +20,44 @@ From **Base Files**, download:
 - Base.bc03.Padova2000.chab.tar.bz2  
 - Base.bc03.Padova2000.salp.tar.bz2  
 
+
 ## Test STARLIGHT
+
+Create a directory (e.g. `~/Downloads/starlight/`) where you place all the files you have downloaded
+above:
+
+    Starlight_v04_[my_version].exe
+    Base.bc03.Padova1994.chab.tar.bz2  
+    Base.bc03.Padova1994.salp.tar.bz2  
+    Base.bc03.Padova2000.chab.tar.bz2  
+    Base.bc03.Padova2000.salp.tar.bz2    
+
+Also copy the files from NEBULATOM-tools/Starlight_data/ to the same
+directory:
+
+    cp NEBULATOM-tools/Starlight_data/* ~/Downloads/starlight/
 
 From a terminal, go to the directory where you have downloaded the files
 above, e.g.
 
     cd ~/Downloads/starlight/
 
-Untar the Starlight distribution:
+Untar the STARLIGHT distribution (this will create a directory named STARLIGHTv04/):
 
     tar xvfj StarlightChains_v04.Distrib.tar.bz2
     
 Make the STARLIGHT you have just downloaded executable and move it to
-the Starlight ditribution directory:
+STARLIGHTv04/ directory:
 
     chmod 755 Starlight_v04_[my_version].exe
     mv Starlight_v04_[my_version].exe STARLIGHTv04/
 
-Go to the Starlight ditribution directory and change a grid file:
+Go to the STARLIGHT ditribution directory and change this grid file:
 
     cd STARLIGHTv04/
     [open grid_example1.in with your favourite text editor]
 
-Edit lines 2--5 (copied below) to the directory where your Starlight
-distribution is. For instance, 
+Edit lines 2--5 (copied below) as below: 
 
     [old]
     /home/cid/STARLIGHTv04/BasesDir/                 [base_dir]
@@ -52,13 +66,10 @@ distribution is. For instance,
     /home/cid/STARLIGHTv04/                          [out_dir]
 
     [new]
-    /home/natalia/Downloads/STARLIGHTv04/BasesDir/   [base_dir]
-    /home/natalia/Downloads/STARLIGHTv04/            [obs_dir]
-    /home/natalia/Downloads/STARLIGHTv04/            [mask_dir]
-    /home/natalia/Downloads/STARLIGHTv04/            [out_dir]
-
-Be careful, the total path cannot be too large (i.e. STARLIGHT will
-complain if your directories are like `/home/natalia/projects/schools/2017/nebulatom3/hands_on/natalia/starlight/STARLIGHTv04/`).
+    ./BasesDir/                                      [base_dir]
+    ./                                               [obs_dir]
+    ./                                               [mask_dir]
+    ./                                               [out_dir]
 
 Save your `grid_example1.in` and try to run STARLIGHT:
 
@@ -114,22 +125,26 @@ Install atpy and pystarlight for python 2.7:
     pip install atpy
     pip install https://bitbucket.org/astro_ufsc/pystarlight/get/27600142ec48.zip
     
-From a new terminal window, test:
+Test your installation:
 
     ipython
+    
+    [copy the commands below]:
     import atpy
     import astropy
     import matplotlib
     import numpy
     import pystarlight
-    atpy.__version__
-    astropy.__version__
-    matplotlib.__version__
-    numpy.__version__
+    print atpy.__version__, astropy.__version__, matplotlib.__version__, numpy.__version__
+    
+    [write this into ipython]:
+    %paste
 
+If you see four sets of numbers (e.g. `0.9.7 1.3.2 2.0.0 1.12.1`),
+python has succesfully imported and shown the versions of the libraries above.
 If there are no warnings or complaints, you are good to go.
 
-Go back to python 3:
+Leave ipython (`CTRL+D`). Go back to python 3:
 
     source deactivate python2.7
 

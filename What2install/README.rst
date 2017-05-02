@@ -139,17 +139,12 @@ From a **new** terminal window, you can verify that the simple command below exe
 
 ``echo 'test' | cloudy.exe``
 
-The CHIANTI Database
-====================
-
-Download the Chianti atomic data from there: http://www.chiantidatabase.org/download/CHIANTI_8.0.6_data.tar.gz
-
-We will see how to use it in the school
-
 Test your installation
 ======================
 
-Once all the above is done, you can open a terminal and go to the directory where the NEBULATOM-tools have been downloaded using git (at the beginning of this page). Go to Notebooks subdirectory. Enter:
+Once all the above is done, you can open a terminal and go to the directory where the NEBULATOM-tools have been downloaded using git (at the beginning of this page). 
+
+Go to Notebooks subdirectory. Enter:
 
 ``jupyter notebook``
 
