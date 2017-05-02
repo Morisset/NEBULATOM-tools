@@ -57,8 +57,7 @@ Go to the STARLIGHT ditribution directory and change this grid file:
     cd STARLIGHTv04/
     [open grid_example1.in with your favourite text editor]
 
-Edit lines 2--5 (copied below) to the directory where your STARLIGHT
-distribution is. For instance, 
+Edit lines 2--5 (copied below) as below: 
 
     [old]
     /home/cid/STARLIGHTv04/BasesDir/                 [base_dir]
