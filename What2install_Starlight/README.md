@@ -11,8 +11,6 @@ and download the following.
 
 From **STARLIGHT version 04 - Public release**:  
 (1) An executable suitable to your OS  
-(2) The distribution file  (This one is included in the NEBULATOM-tools package)  
-(3) The User Guide  (This one is included in the NEBULATOM-tools package)
 
 From **Base Files**, download:  
 - Base.bc03.Padova1994.chab.tar.bz2  
@@ -22,17 +20,32 @@ From **Base Files**, download:
 
 ## Test STARLIGHT
 
+Create a directory (e.g. `~/Downloads/starlight/`) where you place all the files you have downloaded
+above:
+
+    Starlight_v04_[my_version].exe
+    Base.bc03.Padova1994.chab.tar.bz2  
+    Base.bc03.Padova1994.salp.tar.bz2  
+    Base.bc03.Padova2000.chab.tar.bz2  
+    Base.bc03.Padova2000.salp.tar.bz2    
+
+Also copy the files from NEBULATOM-tools/Starlight_data/ to the same
+directory:
+
+    cp NEBULATOM-tools/Starlight_data/* ~/Downloads/starlight/
+
+
 From a terminal, go to the directory where you have downloaded the files
 above, e.g.
 
     cd ~/Downloads/starlight/
 
-Untar the Starlight distribution:
+Untar the Starlight distribution (this will create a directory named STARLIGHTv04/):
 
     tar xvfj StarlightChains_v04.Distrib.tar.bz2
     
 Make the STARLIGHT you have just downloaded executable and move it to
-the Starlight ditribution directory:
+STARLIGHTv04/ directory:
 
     chmod 755 Starlight_v04_[my_version].exe
     mv Starlight_v04_[my_version].exe STARLIGHTv04/
