@@ -175,7 +175,7 @@ DO NOT HESITATE!!!
 
 In case of any problems, don't hesitate to contact Christophe **before going to the school**, as it will be hard to find time for this once on site: chris.morisset@gmail.com
 
-AYOU'RE NOT FINISHED!
+YOU'RE NOT FINISHED!
 ====================
 
 You now need to install the packages needed for Starlight, see there:
