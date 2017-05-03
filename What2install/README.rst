@@ -169,6 +169,16 @@ DO NOT HESITATE!!!
 
 In case of any problems, don't hesitate to contact Christophe **before going to the school**, as it will be hard to find time for this once on site: chris.morisset@gmail.com
 
+Create a directory to work in
+=============================
+
+A lot of models will be run when doing all the exercises from this cookbook. To avoid having the results of the models invading the directory where the ipython notebooks are, the best is to create a special directory that will hold all those files. In the examples this directory is /DATA/NEBULATOM17, you will have to create it (this needs root access) or to adapt the notebooks by changing some lines to reflect your choice.
+As an example, do the following:
+
+sudo mkdir /DATA
+sudo mkdir /DATA/NEBULATOM17
+
+
 YOU'RE NOT FINISHED!
 ====================
 
