@@ -1,3 +1,5 @@
+v1.1.2
+
 ===============
 WHAT TO INSTALL
 ===============
@@ -166,6 +168,12 @@ DO NOT HESITATE!!!
 ==================
 
 In case of any problems, don't hesitate to contact Christophe **before going to the school**, as it will be hard to find time for this once on site: chris.morisset@gmail.com
+
+A directory to work in
+=============================
+
+A lot of models will be run when doing all the exercises from this cookbook. To avoid having the results of the models invading the directory where the ipython notebooks are, the best is to create a special directory that will hold all those files. In the examples this directory is ../Models.
+
 
 YOU'RE NOT FINISHED!
 ====================
