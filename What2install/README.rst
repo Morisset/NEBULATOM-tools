@@ -164,18 +164,18 @@ Just **before leaving for NEBULATOM school**, you need to update the files in th
 
 This will only download the files that were modified.
 
+A directory to work in
+======================
+
+A lot of models will be run when doing all the exercises from this cookbook. To avoid having the results of the models invading the directory where the ipython notebooks are, the best is to create a special directory that will hold all those files. In our workshop, this directory is "Models", and have to be created on the same level as NEBULATOM-tools.
+
+
 DO NOT HESITATE!!!
 ==================
 
 In case of any problems, don't hesitate to contact Christophe **before going to the school**, as it will be hard to find time for this once on site: chris.morisset@gmail.com
 
-A directory to work in
-=============================
-
-A lot of models will be run when doing all the exercises from this cookbook. To avoid having the results of the models invading the directory where the ipython notebooks are, the best is to create a special directory that will hold all those files. In our workshop, this directory is "Models", and have to be created on the same level as NEBULATOM-tools.
-
-
-YOU'RE NOT FINISHED!
+AYOU'RE NOT FINISHED!
 ====================
 
 You now need to install the packages needed for Starlight, see there:
