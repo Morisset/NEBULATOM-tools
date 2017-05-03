@@ -167,7 +167,7 @@ This will only download the files that were modified.
 A directory to work in
 ======================
 
-A lot of models will be run when doing all the exercises from this cookbook. To avoid having the results of the models invading the directory where the ipython notebooks are, the best is to create a special directory that will hold all those files. In our workshop, this directory is "Models", and have to be created on the same level as NEBULATOM-tools.
+A lot of models will be run when doing all the exercises from this cookbook. To avoid having the results of the models invading the directory where the ipython notebooks are, the best is to create a special directory that will hold all those files. In our workshop, this directory is "Models", and has to be created on the same level as NEBULATOM-tools.
 
 
 DO NOT HESITATE!!!
