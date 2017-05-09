@@ -1,4 +1,4 @@
-v1.1.3
+v4
 
 ===============
 WHAT TO INSTALL
@@ -115,8 +115,6 @@ If you do not succeed to compile Cloudy, contact Christophe.
 Run CLOUDY from everywhere
 --------------------------
 
-Once Cloudy is installed,
-
 Once you have obtained the cloudy.exe program, you must inform your operating system where to find it from everywhere.
 
 This can be done in different ways, most of them requiring editing the preferences file of the operating system.
@@ -128,14 +126,18 @@ There are 2 shells that are widely used: bash and (t)csh. To know which one is y
 Depending on the answer, follow these instructions:
 
 1. /bin/sh or /bin/bash
- Edit or create the file .bashrc in your home directory and add the following line (you must adapt it to the actual location of cloudy.exe on your system):
+ Edit or create the file .bashrc in your home directory and add the
+ following line (you must adapt it to the actual directory where
+ cloudy.exe is on your system):
 
- alias cloudy.exe="/home/morisset/Cloudy/c17.00_rc1/source/cloudy.exe"
-
+setenv PATH /home/morisset/Cloudy/c17.00_rc1/source/:$PATH
+ 
 2. /bin/csh or /bin/tcsh
- Edit or create the file .tcshrc in your home directory and add the following line (you must adapt it to the actual location of cloudy.exe on your system):
+ Edit or create the file .tcshrc in your home directory and add the
+ following line (you must adapt it to the actual directory where
+ cloudy.exe is on your system):
 
- alias cloudy.exe "/home/morisset/Cloudy/c17.00_rc1/source/cloudy.exe"
+export PATH=/home/morisset/Cloudy/c17.00_rc1/source/:$PATH
 
 From a **new** terminal window, you can verify that the simple command below executed from any other directory than the source directory actually runs the cloudy smoke test:
 
