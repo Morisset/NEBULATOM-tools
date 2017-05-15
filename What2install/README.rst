@@ -51,9 +51,9 @@ The most simple way to have all the needed packages is to install a full python 
 To verify if you have anaconda installed, just look at the answer of ``which python`` command in a terminal. If it points to a directory which name contains "anaconda", it means that you already have anaconda installed and you should go to point 2 below. If not, go to point 1.
 
 1. If you don't have anaconda installed: The anaconda package is available following this link: `https://www.continuum.io/downloads <https://www.continuum.io/downloads>`_. We will use the python 3.6 package.
-
 Once done, from a new terminal, do the following: ::
-   conda install pymysql
+
+  conda install pymysql
 
 2. If you already have an anaconda distribution installed for python2:
 you only need to install a 3.6 environment, by writing the following in a terminal: ::
