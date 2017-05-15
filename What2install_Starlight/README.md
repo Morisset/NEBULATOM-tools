@@ -118,7 +118,11 @@ Check it has been created:
 
 Activate python 2.7:
 
-    source activate python2.7
+	source activate python2.7
+
+Add python 2.7 to the notebook kernels:
+
+	ipython kernel install --user
 
 Install atpy and pystarlight for python 2.7:
     
