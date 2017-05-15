@@ -71,6 +71,7 @@ PyNeb
 =====
 
 The normal way to install PyNeb is the following ::
+  
   pip install -U pyneb
 
 but we may need to work with the latest development version, in which
@@ -81,6 +82,7 @@ pyCloudy
 ========
 
 The normal way to install pyCloudy is the following ::
+  
    pip install -U pycloudy
 
 but we may need to work with the latest development version, in which
