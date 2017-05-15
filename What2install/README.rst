@@ -13,7 +13,7 @@ git
 ===
 
 You will need to have installed git software. You can verify if you
-already have it by doing in a terminal ::
+already have it by doing in a terminal: ::
    which git
 
 if no link is given, you have to download this tool that we will use during the workshop.
@@ -26,7 +26,8 @@ II. Linux: depending on your distribution:
     B. ``sudo apt-get install git``
 
 Once done, from a new terminal create a directory dedicated for
-NEBULATOM3, and from it, verify that git is running well by executing ::
+NEBULATOM3, and from it, verify that git is running well by executing:
+::
    
    git clone https://github.com/Morisset/NEBULATOM-tools.git
 
@@ -35,7 +36,7 @@ This will download some of the needed files for the school.
 You need to do this and all the following **as soon as possible**, so we can detect and correct any problem.
 
 Just **before leaving for NEBULATOM school**, you need to update the
-files in this directory by running from it ::
+files in this directory by running from it: ::
    git stash
    git pull
 
@@ -51,11 +52,11 @@ To verify if you have anaconda installed, just look at the answer of ``which pyt
 
 1. If you don't have anaconda installed: The anaconda package is available following this link: `https://www.continuum.io/downloads <https://www.continuum.io/downloads>`_. We will use the python 3.6 package.
 
-Once done, from a new terminal, do the following ::
+Once done, from a new terminal, do the following: ::
    conda install pymysql
 
 2. If you already have an anaconda distribution installed for python2:
-you only need to install a 3.6 environment, by writing the following in a terminal ::
+you only need to install a 3.6 environment, by writing the following in a terminal: ::
    
    conda create --name py3k6 python=3.6 matplotlib scipy numpy ipython h5py astropy pymysql pandas pytest ipykernel
 
@@ -64,14 +65,14 @@ you only need to install a 3.6 environment, by writing the following in a termin
    ipython kernel install --user
 
 In both cases, once you have python 3.6 installed, you still need some
-additional libraries. From a terminal, do the following ::
+additional libraries. From a terminal, do the following: ::
    pip install atpy
    pip install pillow
 
 PyNeb
 =====
 
-The normal way to install PyNeb is the following ::
+The normal way to install PyNeb is the following: ::
   
   pip install -U pyneb
 
@@ -82,7 +83,7 @@ case you will do the following (only if I ask it during the workshop) ::
 pyCloudy
 ========
 
-The normal way to install pyCloudy is the following ::
+The normal way to install pyCloudy is the following: ::
   
    pip install -U pycloudy
 
@@ -105,7 +106,7 @@ You need to follow the instructions on this page: http://www.nublado.org/wiki/St
 After downloading the code and before compiling the code (before running make), you need to do the following:
 
 Edit the source/Makefile file to change the line number 116, by adding ".:" before "+":
-You will obtain the following line ::
+You will obtain the following line: ::
    CDP = .:+
 
 This will indicate Cloudy that some files can be found in your current dirrectory, and not only in the place where Cloudy store its data.
@@ -122,7 +123,7 @@ Once you have obtained the cloudy.exe program, you must inform your operating sy
 This can be done in different ways, most of them requiring editing the preferences file of the operating system.
 
 There are 2 shells that are widely used: bash and (t)csh. To know
-which one is yours, type the following in a terminal ::
+which one is yours, type the following in a terminal: ::
    echo $shell
 
 Depending on the answer, follow these instructions:
@@ -130,20 +131,21 @@ Depending on the answer, follow these instructions:
 1. /bin/sh or /bin/bash
  Edit or create the file .bashrc in your home directory and add the
  following line (you must adapt it to the actual directory where
- cloudy.exe is on your system):
+ cloudy.exe is on your system): ::
 
- export PATH=/home/morisset/Cloudy/c17.00_rc1/source/:$PATH
+   export PATH=/home/morisset/Cloudy/c17.00_rc1/source/:$PATH
 
 2. /bin/csh or /bin/tcsh
  Edit or create the file .tcshrc in your home directory and add the
  following line (you must adapt it to the actual directory where
- cloudy.exe is on your system):
+ cloudy.exe is on your system): ::
 
- setenv PATH /home/morisset/Cloudy/c17.00_rc1/source/:$PATH
+   setenv PATH /home/morisset/Cloudy/c17.00_rc1/source/:$PATH
 
 From a **new** terminal window, you can verify that the simple command
 below executed from any other directory than the source directory
-actually runs the cloudy smoke test ::
+actually runs the cloudy smoke test: ::
+  
    which cloudy.exe
    echo 'test' | cloudy.exe
 
@@ -152,7 +154,7 @@ Test your installation
 
 Once all the above is done, you can open a terminal and go to the directory where the NEBULATOM-tools have been downloaded using git (at the beginning of this page). 
 
-Go to Notebooks subdirectory. Enter ::
+Go to Notebooks subdirectory. Enter: ::
    jupyter notebook
 
 This should open a new tab in your web browser. 
@@ -164,7 +166,7 @@ A new page appears. You can execute each of the instructions from this page by c
 If everything is OK, you should see the different versions of the packages we will use.
 
 Just **before leaving for NEBULATOM school**, you need to update the
-files in the NEBULATOM-tools directory by running from it ::
+files in the NEBULATOM-tools directory by running from it: ::
    git stash
    git pull
 
