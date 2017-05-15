@@ -50,7 +50,7 @@ To verify if you have anaconda installed, just look at the answer of ``which pyt
 
 1. If you don't have anaconda installed: The anaconda package is available following this link: `https://www.continuum.io/downloads <https://www.continuum.io/downloads>`_. We will use the python 3.6 package.
 
- Once done, from a new terminal, do the following ::
+Once done, from a new terminal, do the following ::
    conda install pymysql
 
 2. If you already have an anaconda distribution installed for python2:
@@ -71,7 +71,7 @@ PyNeb
 =====
 
 The normal way to install PyNeb is the following ::
-   pip install -U pyneb
+  pip install -U pyneb
 
 but we may need to work with the latest development version, in which
 case you will do the following (only if I ask it during the workshop) ::
