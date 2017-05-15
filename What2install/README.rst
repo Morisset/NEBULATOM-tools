@@ -130,14 +130,14 @@ Depending on the answer, follow these instructions:
  following line (you must adapt it to the actual directory where
  cloudy.exe is on your system):
 
-setenv PATH /home/morisset/Cloudy/c17.00_rc1/source/:$PATH
- 
+ export PATH=/home/morisset/Cloudy/c17.00_rc1/source/:$PATH
+
 2. /bin/csh or /bin/tcsh
  Edit or create the file .tcshrc in your home directory and add the
  following line (you must adapt it to the actual directory where
  cloudy.exe is on your system):
 
-export PATH=/home/morisset/Cloudy/c17.00_rc1/source/:$PATH
+ setenv PATH /home/morisset/Cloudy/c17.00_rc1/source/:$PATH
 
 From a **new** terminal window, you can verify that the simple command below executed from any other directory than the source directory actually runs the cloudy smoke test:
 
