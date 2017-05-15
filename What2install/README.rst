@@ -155,6 +155,7 @@ Test your installation
 Once all the above is done, you can open a terminal and go to the directory where the NEBULATOM-tools have been downloaded using git (at the beginning of this page). 
 
 Go to Notebooks subdirectory. Enter: ::
+  
    jupyter notebook
 
 This should open a new tab in your web browser. 
