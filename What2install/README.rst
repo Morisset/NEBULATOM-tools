@@ -12,7 +12,8 @@ In case of any problems, don't hesitate to contact Christophe Morisset before go
 git
 ===
 
-You will need to have installed git software. You can verify if you already have it by doing in a terminal::
+You will need to have installed git software. You can verify if you
+already have it by doing in a terminal ::
    which git
 
 if no link is given, you have to download this tool that we will use during the workshop.
@@ -20,8 +21,8 @@ Depending on your operating system:
 
 I. Mac OSX: install the package from https://git-scm.com/download/mac
 II. Linux: depending on your distribution:
-    (A) ``sudo yum install git``
-    (B) ``sudo apt-get install git``
+    A. ``sudo yum install git``
+    B. ``sudo apt-get install git``
 
 Once done, from a new terminal create a directory dedicated for NEBULATOM3, and from it, verify that git is running well by executing::
    git clone https://github.com/Morisset/NEBULATOM-tools.git
