@@ -27,6 +27,7 @@ II. Linux: depending on your distribution:
 
 Once done, from a new terminal create a directory dedicated for
 NEBULATOM3, and from it, verify that git is running well by executing ::
+   
    git clone https://github.com/Morisset/NEBULATOM-tools.git
 
 This will download some of the needed files for the school.
