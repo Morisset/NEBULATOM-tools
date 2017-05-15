@@ -1,4 +1,4 @@
-v4
+v5
 
 ===============
 WHAT TO INSTALL
@@ -23,8 +23,8 @@ Depending on your operating system:
 
 I. Mac OSX: install the package from https://git-scm.com/download/mac
 II. Linux: depending on your distribution:
- a. ``sudo yum install git``
- b. ``sudo apt-get install git``
+    (A) ``sudo yum install git``
+    (B) ``sudo apt-get install git``
 
 Once done, from a new terminal create a directory dedicated for NEBULATOM3, and from it, verify that git is running well by executing:
 
@@ -63,7 +63,9 @@ To verify if you have anaconda installed, just look at the answer of ``which pyt
 ::
    
    conda create --name py3k6 python=3.6 matplotlib scipy numpy ipython h5py astropy pymysql pandas pytest ipykernel
+
    source activate py3k6
+
    ipython kernel install --user
 
 In both cases, once you have python 3.6 installed, you still need some additional libraries. From a terminal, do the following:
