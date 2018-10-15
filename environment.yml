@@ -1,0 +1,14 @@
+name: pyneb
+dependencies:
+  - python
+  - numpy
+  - matplotlib
+  - scipy
+  - h5py
+  - pandas
+  - astropy
+  - pymysql
+  - pip:
+     - pyneb
+     - pyCloudy
+     - atpy
